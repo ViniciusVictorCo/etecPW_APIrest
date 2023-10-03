@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é uma API REST?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <h1 class="navbar__logo-text">LOGO</h1>
+            </div>
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="#o-que-e-api">O que é uma API?</a></li>
+                <li class="navbar__item"><a href="#api-rest">API REST</a></li>
+                <li class="navbar__item"><a href="#conceitos">Conceitos</a></li>
+                <li class="navbar__item"><a href="#verbos-http">Verbos HTTP</a></li>
+                <li class="navbar__item"><a href="#codigos-resposta">Códigos de Resposta</a></li>
+                <li class="navbar__item"><a href="#modelo-maturidade">Modelo de Maturidade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content" id="o-que-e-api">
+        <h2 class="content__heading">O que é uma API?</h2>
+        <p class="content__text">API (Interface de Programação de Aplicativos) é um conjunto de regras e protocolos que permite que diferentes sistemas se comuniquem entre si. Ela define como solicitações e respostas devem ser estruturadas, permitindo que aplicativos compartilhem dados e funcionalidades.</p>
+    </section>
+
+    <section class="content" id="api-rest">
+        <h2 class="content__heading">O que caracteriza uma API como REST?</h2>
+        <p class="content__text">Uma API é considerada RESTful quando segue os princípios da arquitetura REST (Representational State Transfer). Isso significa que ela é baseada em recursos, usa métodos HTTP para interações e é stateless (não mantém estado entre solicitações).</p>
+    </section>
+
+    <section class="content" id="conceitos">
+        <h2 class="content__heading">Conceitos Essenciais</h2>
+        <ul class="content__list">
+            <li class="content__list-item"><strong>Recurso:</strong> Um recurso é uma entidade acessível por meio da API, como um usuário ou um produto.</li>
+            <li class="content__list-item"><strong>Identificador de Recurso:</strong> É a parte da URL que identifica exclusivamente um recurso, como um ID de usuário em `/usuarios/123`.</li>
+            <li class="content__list-item"><strong>Tipo de Dados (Data Type):</strong> Refere-se ao formato dos dados trocados, geralmente JSON ou XML.</li>
+        </ul>
+    </section>
+
+    <section class="content" id="verbos-http">
+        <h2 class="content__heading">Importância dos Verbos HTTP</h2>
+        <p class="content__text">Os verbos HTTP (GET, POST, PUT, DELETE, etc.) são importantes em APIs REST porque definem a ação a ser executada em um recurso. Por exemplo:</p>
+        <ul class="content__list">
+            <li class="content__list-item"><strong>GET:</strong> Recupera dados de um recurso.</li>
+            <li class="content__list-item"><strong>POST:</strong> Cria um novo recurso.</li>
+            <li class="content__list-item"><strong>PUT:</strong> Atualiza um recurso existente.</li>
+            <li class="content__list-item"><strong>DELETE:</strong> Remove um recurso.</li>
+        </ul>
+    </section>
+
+    <section class="content" id="codigos-resposta">
+        <h2 class="content__heading">Principais Códigos de Resposta HTTP</h2>
+        <p class="content__text">Alguns códigos de resposta HTTP comuns e seus significados incluem:</p>
+        <ul class="content__list">
+            <li class="content__list-item"><strong>200 OK:</strong> Requisição bem-sucedida.</li>
+            <li class="content__list-item"><strong>201 Created:</strong> Recurso criado com sucesso.</li>
+            <li class="content__list-item"><strong>400 Bad Request:</strong> Solicitação inválida.</li>
+            <li class="content__list-item"><strong>404 Not Found:</strong> Recurso não encontrado.</li>
+            <li class="content__list-item"><strong>500 Internal Server Error:</strong> Erro interno no servidor.</li>
+        </ul>
+    </section>
+
+    <section class="content" id="modelo-maturidade">
+        <h2 class="content__heading">Modelo de Maturidade</h2>
+        <p class="content__text">O modelo de maturidade de Richardson é uma escala que avalia o nível de aderência de uma API REST aos princípios RESTful. Vai de 0 (não RESTful) a 3 (totalmente RESTful).</p>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2023 API REST Explained</p>
+    </footer>
+</body>
+</html>

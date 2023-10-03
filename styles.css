@@ -1,0 +1,166 @@
+/* Estilos globais */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header__title {
+    font-size: 36px;
+}
+
+/* Estilos da barra de navegação */
+.navbar {
+    background-color: #2f3235;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.658);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.navbar__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar__item {
+    margin-right: 20px;
+}
+
+.navbar__item:last-child {
+    margin-right: 0;
+}
+
+.navbar__item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar__item a:hover {
+    color: #929292;
+}
+
+/* Estilos do logo na barra de navegação */
+.navbar__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar__logo-text {
+    margin: 0;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+.navbar__logo-subtext {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Estilos do conteúdo */
+.content {
+    background-color: #fff;
+    padding: 40px;
+    margin: 100px 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.content__heading {
+    font-size: 24px;
+    color: #272727;
+    margin-top: 0;
+}
+
+.content__text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.content__list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.content__list-item {
+    margin-bottom: 10px;
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer__text {
+    font-size: 14px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos adicionais para dar um toque abstrato */
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#ffffff, #000000);
+    z-index: -1;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.navbar__logo {
+    transform: translateY(-10px);
+}
+
+.navbar__logo-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar__logo-subtext {
+    font-size: 18px;
+    color: #fff;
+}
